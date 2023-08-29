@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <center>Nature</center>
+    </title>
+  </head>
+  <body>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+  <h1>
+    <center>Nature</center>
+  </h1>
+  <center>
+    <img src="Tree.jpg" alt="Tree">
+  </center>
+<p>
+</p>
+<center>
+    <label for="Nature">Reasons to love Nature:</label>
+  <select id="Nature">
+    <option value="Peaceful">Peaceful</option>
+    <option value="Animals">Animals</option>
+    <option value="Fishing">Fishing</option>
+</center>  
+  </select>
+<script>
+  const select = document.getElementById('interests');
+  select.addEventListener('change', () => {
+    const selectedOption = select.value;
+    alert(`You selected: ${selectedOption}`);
+  });
+</script>
+  </body>
+</html>
